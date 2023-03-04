@@ -16,7 +16,7 @@ const AllContact = () => {
   useEffect(async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/api/mycontacts`, {
+      const res = await fetch(`https://web-production-be1f.up.railway.app/api/mycontacts`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
